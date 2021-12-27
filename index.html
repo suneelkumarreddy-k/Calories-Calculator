@@ -1,0 +1,30 @@
+<html>
+<title>Calories Calculator</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Calories Calculator">
+  <meta name="keywords" content="Calories Calculator">
+  <meta name="author" content="Shri Suneel Kumar Reddy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Calories Calculator</h1>
+Carbohydrates :
+<input id="carbs" type="number" placeholder="grams" >
+Proteins :
+<input id="prts" type="number" placeholder="grams" >
+Fats :
+<input id="fats" type="number" placeholder="grams" >
+<input type="button" value="Calculate" onclick="cal()">
+<p>Total Calories = <span id="cals">0</span></p>
+<footer>
+<p>© Shri Suneel Kumar Reddy </p>
+</footer>
+<script>
+function cal() {
+document.getElementById("cals").innerHTML = Math.ceil((document.getElementById("carbs").value*4)+(document.getElementById("prts").value*4)+ (document.getElementById("fats").value *9));
+window.alert("Calculated 😎");
+}
+</script>
+</body>
+</html>
