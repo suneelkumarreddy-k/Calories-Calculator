@@ -9,11 +9,11 @@
 </head>
 <body>
 <h1>Calories Calculator</h1>
-<p>Carbohydrates : <span id="cbs"></span> Calories </p>
+<p>Carbohydrates : <span id="cbs"></span></p>
 <input id="carbs" type="number" placeholder="grams" >
-<p>Proteins : <span id="pts"></span> Calories </p>
+<p>Proteins : <span id="pts"></span></p>
 <input id="prts" type="number" placeholder="grams" >
-<p>Fats : <span id="fts"></span> Calories </p>
+<p>Fats : <span id="fts"></span></p>
 <input id="fats" type="number" placeholder="grams" >
 <input type="button" value="Calculate" onclick="cal()">
 <hr>
@@ -25,9 +25,9 @@
 function cal() {
 document.getElementById("cals").innerHTML = (document.getElementById("carbs").value*4)+(document.getElementById("prts").value*4)+ (document.getElementById("fats").value *9);
 window.alert("Calculated 😎");
-document.getElementById("cbs").innerHTML = document.getElementById("carbs").value*4;
-document.getElementById("pts").innerHTML = document.getElementById("prts").value*4;
-document.getElementById("fts").innerHTML = document.getElementById("fats").value*9;
+document.getElementById("cbs").innerHTML = document.getElementById("carbs").value*4 + " Calories";
+document.getElementById("pts").innerHTML = document.getElementById("prts").value*4 + " Calories";
+document.getElementById("fts").innerHTML = document.getElementById("fats").value*9 + " Calories";
 }
 </script>
 </body>
