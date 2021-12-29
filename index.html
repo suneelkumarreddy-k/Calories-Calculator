@@ -22,17 +22,8 @@
 <footer>
 <p>© Shri Suneel Kumar Reddy </p>
 </footer>
-<script>
-function cal() {
-var start = window.performance.now();
-document.getElementById("cals").innerHTML = (document.getElementById("carbs").value*4)+(document.getElementById("prts").value*4)+ (document.getElementById("fats").value *9);
-document.getElementById("cbs").innerHTML = document.getElementById("carbs").value*4 + " Calories";
-document.getElementById("pts").innerHTML = document.getElementById("prts").value*4 + " Calories";
-document.getElementById("fts").innerHTML = document.getElementById("fats").value*9 + " Calories";
-var end = window.performance.now();
-var wpn = end - start; 
-alert("Calculated in "+wpn+" ms 😎");
-}
+<script src="app.js">
+
 </script>
 <noscript>
 Hint : JavaScript disabled 😎
