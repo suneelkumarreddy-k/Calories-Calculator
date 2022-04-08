@@ -1,13 +1,17 @@
 <html>
-<title>Calories Calculator</title>
+<title>Body Calories Calculator</title>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Calories Calculator">
+  <meta name="description" content="Body Calories Calculator">
   <meta name="keywords" content="Calories Calculator">
   <meta name="author" content="Shri Suneel Kumar Reddy">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<noscript>
+Hint : JavaScript disabled 😎
+</noscript>
 <h1>Calories Calculator</h1>
 <form onsubmit="cal();return false">
 <p>Carbohydrates : <span id="cbs"></span></p>
@@ -19,12 +23,6 @@
 <input type="submit" value="Calculate" >
 <hr>
 <h2>Total Calories = <span id="cals">0</span></h2>
-<footer>
-<p>© Shri Suneel Kumar Reddy </p>
-</footer>
 <script src="app.js" integrity="sha512-hcGEd/EZv4RrW42gEhMGxkVdQrpXRPXRWgYwZSl2OBRwHuL3S8iE2O35QFrwtp0iJxyPilJOmFYQMRooc0Eclg==" crossorigin="anonymous"></script>
-<noscript>
-Hint : JavaScript disabled 😎
-</noscript>
 </body>
 </html>
