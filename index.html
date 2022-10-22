@@ -14,6 +14,10 @@ Hint : JavaScript disabled 😎
 </noscript>
 <h1>Calories Calculator</h1>
 <form onsubmit="cal();return false">
+<h2>Fixed Amount of Calories : <span id="fmc"></span></h2>
+<input id="calories" type="number" placeholder="calories" required >
+<h2>Macros Ratio (carb%/protein%/fat%) : <span id="cpf"></span></h2>
+<input id="mr" type="text" placeholder="00/00/00" required >
 <h2>Carbohydrates (4 cals = 1gm) : <span id="cbs"></span></h2>
 <input id="carbs" type="number" placeholder="grams" required >
 <h2>Proteins (4 cals = 1gm) : <span id="pts"></span></h2>
